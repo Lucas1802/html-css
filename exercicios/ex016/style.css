@@ -1,0 +1,32 @@
+@charset "UTF-8"; /*Dizendo que neste css vai possuir caractares com assentos tbm*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #E6C89E, #997543);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(87, 67, 39, 0.452);
+}
+
+h1 {
+    color:#997543;
+    text-align: center;
+    text-shadow: 1px 1px 2px #7962437e;
+}
+
+h2 {
+    color: #E6C89E;
+}
+
+p {
+    text-align: justify;
+}

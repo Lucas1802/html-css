@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!--Estou dizendo que este é documento HTML5-->
+<html lang="pt-br"> <!--Dizendo que este texto vai ser em portugues brasil-->
+<head> <!--Abertura da area de configurações do meu site-->
+    <meta charset="UTF-8"> <!--Dizendo que este texto vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que meu site vai abrir em 100% na tela-->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon"><!--Trazendo meu icone na minha pagina que fica la em cima-->
+    <title>Videos com html5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1> <!--Nivel 1 de titulo-->
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <video poster="imagens/limoes-capa.png" src="midia/meu-video.mp4" width="300" controls></video> <!--TAG trazendo meu video com tamanho 200 e controls para poder iniciar meu video tambem coloquei o parametro POSTER para ficar como se fosse uma capa antes de iniciar meu video e o CONTROLS para dizer que é um video isso e o WIDTH para dizer que este video vai possuir um tamanho de 300px  -->
+    
+
+    <!--ABAIXO funciona da mesma forma que acima, porem coloco todos tipos de arquivo pois nem todos navegadores suportam MP4 entao por falta de um funcionar eu tenho mais 3.
+    Tambem coloquei alguns parametros que é o WIDTH para dizer que este video vai possuir tamanho de 500px o POSTER que vai trazer uma foto de inicio para o meu vide como uma foto de capa antes de iniciar o video e o CONTROLS para poder inciar meu video-->
+    <video width="500" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <p>Seu navegador nao tem compatibilidade com videos</p>
+    </video>
+    <!--LEMBRANDO que a ordem que eu colocar aqui é oq ele vai carregar por primeiro-->
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z-B2KaApETk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html> 

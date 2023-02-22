@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--Dizendo que este documento é html5-->
+<html lang="pt-br"><!--Dizendo que este documento vai ser em portugues Brasil-->
+<head> <!--Area de configurações do meu site-->
+    <meta charset="UTF-8"><!--Dizendo que vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo  internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que vaia abrir em 100%-->
+    <title>Teste de responsividade</title> <!--Titulo que fica la em cima na aba do navegador-->
+    <style> /*Trazendo estilos para meu css*/
+        body { /*Dizendo que o fundo da pagina vai ser em cinza*/
+            background-color: gray;
+        }
+
+        main { /*Dizendo que o fundo do meu conteudo principal vai ser em branco com borda do padding em 10px e com borda nas pontas de 10px*/
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+
+            /*Dizendo que o tamanho maximo do meu MAIN (Conteudo pricipal) vai ser em 800px e que o minimo vai ser em 270px e que a minha margin vai ser AUTO para centralizar o conteudo*/
+
+            min-width: 270px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img { /*Dizendo que meu video vai ser em tamanho 100%*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body> <!--Cabeçalho do site onde fica meu conteudo-->
+    <main> <!--Tag MAIN referente ao conteudo principal do meu site-->
+        <h1>Testando responsividade</h1> <!--Titulo de nivel 1-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa quibusdam nam ea amet, eius dignissimos aut rem. Officiis sapiente modi accusamus recusandae fugit voluptatibus! Fugit voluptatem vel ipsum corrupti.
+        Minima ullam sapiente minus accusamus sequi necessitatibus harum commodi voluptas quis veritatis! Placeat reiciendis obcaecati, modi iusto hic itaque, odio voluptatem beatae saepe, fugiat similique tempore vitae quibusdam quo repellendus.
+        Inventore exercitationem atque officiis aut rem, laudantium voluptatem excepturi expedita ad facilis cumque, tempore, fugiat odio suscipit! Adipisci voluptate eaque iusto assumenda, laudantium numquam quaerat odit? Culpa libero voluptatum fugit.</p> <!--Paragrafo com 3 LOREM IPSON-->
+        <picture> <!--Tag picture (FOTO)-->
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg"><!--Trazendo meu SOURCENG e nos parametro MEDIA dizendo que o MAXIMO DE TAMANHO DA FOTO VAI SER 800PX e trago minha foto no modelo pequena e na TAG IMG abaixo trago minha foto maior na tag IMG-->
+            <img src="imagens/irina-blok.jpg" alt="Irina Block">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa quibusdam nam ea amet, eius dignissimos aut rem. Officiis sapiente modi accusamus recusandae fugit voluptatibus! Fugit voluptatem vel ipsum corrupti.
+        Minima ullam sapiente minus accusamus sequi necessitatibus harum commodi voluptas quis veritatis! Placeat reiciendis obcaecati, modi iusto hic itaque, odio voluptatem beatae saepe, fugiat similique tempore vitae quibusdam quo repellendus.
+        Inventore exercitationem atque officiis aut rem, laudantium voluptatem excepturi expedita ad facilis cumque, tempore, fugiat odio suscipit! Adipisci voluptate eaque iusto assumenda, laudantium numquam quaerat odit? Culpa libero voluptatum fugit.</p><!--Paragrafo com 3 LOREM IPSON-->
+    </main>
+</body>
+</html>

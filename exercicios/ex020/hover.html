@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--Abrindo documento em HTML5-->
+<html lang="pt-br"><!--Dizendo que vai ser em portugues brasil-->
+<head> <!--Abertura da area de configurações do meu site-->
+    <meta charset="UTF-8"> <!--Vai possuir assentos o meu texto-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Vai abrir em 100% o site-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> <!--Dizendo que meu icone do site vai estar la em cima na aba do navegador-->
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        } /*Dizendo que a fonte de todo meu conteudo vai ser arial ou helvetica ou sans serif*/
+
+        div > p { /*Significa que a minha div tem um filho que é o P*/
+            display: none; /*E estou dizendo que nao é para aparecer o meu paragrafo*/
+        }
+
+        div:hover > p { /*Estou colocando meu hover para quando passar mouse em cima ele aparecer e dizendo para aparecer logo abaixo o filho que no caso é o P paragrafo*/
+            display: block; /*Estou dizendo que quando passsar mouse em cima vai aparecer*/
+            color: white; /*Cor branca no texto*/
+            background-color: black; /*Fundo preto*/
+            width: 300px; /*Largura de 300px*/
+        }
+
+        div:hover { /*Dizendo que quando passar mouse em cima vai ficar na cor vemelha*/
+            color: red; /*Cor do texto vermelha*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1> <!--Texto de nivel 1-->
+    <p>Passe o mouse sobre o texto abaixo</p> <!--Paragrafo-->
+    <div> <!--Tag DIV-->
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>fim do Exemplo</p>
+</body>
+</html>

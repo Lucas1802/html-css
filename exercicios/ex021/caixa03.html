@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!--Falando que é HTML5-->
+<html lang="pt-br"> <!--Falando que é portugues brasil-->
+<head> <!--Area de configurações do site-->
+    <meta charset="UTF-8"> <!--Dizendo que vai ter assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Exclusivo internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dizendo que vai abrir em 100%-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> <!--Icone que fica na aba la em cima no navegador-->
+    <title>Borda personalizada</title> <!--Titulo que fica na aba la em cima no navegador-->
+    <style>
+        h1 {
+            border: 8px solid black;
+            padding: 10px;
+
+            /*border-image-source: url('borda.png');
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            
+            USANDO SHORTHAND ABAIXO
+            
+            */
+
+            border-image: url('borda.png') 20 repeat;
+        }
+    </style>
+</head>
+<body> <!--Conteudo do meu site-->
+    <h1>Teste de borda</h1> <!--Titulo de nivel 1-->
+</body>
+</html>

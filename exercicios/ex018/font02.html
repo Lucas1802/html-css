@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!--Dizendo que este código vai ser em HTML5-->
+<html lang="pt-br"> <!--Dizendo que este codigo vai ser em portugues brasil-->
+<head> <!--Abertura da configurações do site-->
+    <meta charset="UTF-8"> <!--Dizendo que meu texto vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusiva internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que vai abrir em 100% sem comer palavras nem fotos-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"><!--Trazendo icone para meu site na aba que fica la em cima-->
+    <title>Fontes externas baixadas</title> <!--Titulo da aba da minha pagina-->
+    <style>/*Abertura de estilos internos dentro do html*/
+        @font-face { /*Aqui estou trazendo minha regra e dentro dela trago algumas declarações que sao minhas fontes meu SRC com a URL que passo minha origem da minha fonte que baixei externamente e o parametro formato que no caso de TTF é o TRUETYPE no caso de OPENTYPE é o OTR e esses sao os mais utilizados que maioria dos navegadores aceitam*/
+            font-family: 'Love';
+            src: url('font/LoveLadyPersonalUse.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*TIPOS DE FORMAT
+            
+            -Opentype (otr)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-att (apple Advanced Typography)
+            -svg
+
+            */
+        }
+        body { /*Aqui estou trazendo dizendo que todo meu body vai ter font ARIAL caso nao tenha ela vai tentar a HELVETICA e caso nao tenha tambem ele tenta a SANS-SERIF que todos os navegadores aceitam*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 { /*Aqui estou trazendo a minha fonte que trouxe da minha regra que eu eu peguei externamente e baixei*/
+            font-family: 'Love', Times, serif; /*Nela eu coloquei o nome da minha font-family que neste caso é LOVE e estou dizendo que minha fonte vai ser em 3em que é 3 x 16px e dizendo que meu peso da fonte vai ser normal*/
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1> <!--Titulo de nivel 1-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis explicabo cumque sequi hic labore. Iste qui earum facere perferendis nemo eligendi reiciendis sint mollitia tenetur quod consequuntur distinctio, explicabo adipisci?</p><!--Paragrafo com meu lorem-->
+</body>
+</html>

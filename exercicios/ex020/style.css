@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+div {
+    display: inline-block;
+    background-color: #8d8c8c;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+/*
+div#d1 {
+    background-color: #0000ff;
+}
+
+div#d2 {
+    background-color: #ee82ee;
+}
+
+div#d3 {
+    background-color: #ff0000;
+}*/
+
+div:hover {
+    background-color: blue;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html> <!--Dizendo que meu código vai ser HTML5-->
+<html lang="pt-br"> <!--Dizendo que este texto vai ser HTML5-->
+<head> <!--Area de configurações do meu site-->
+    <meta charset="UTF-8"> <!--Dizendo que meu site vai possuir assuntos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que este site vai abrir em tamanho 100% sem comer palavras...-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> <!--Dizendo que estou pondo o icone no meu site la na pagina la em cima-->
+    <title>Links e Ancoras no HTML 5</title>
+</head>
+<body> <!--Onde fica o conteudo do meu site-->
+    <h1>Usando links</h1> <!--Titulo nivel 1-->
+
+    <h2>Usando links externos</h2> <!--Titulo nivel 2-->
+    <p>Você pode acessar o meu <a href="https://github.com/" target="_blank" rel="external">repositorio publico no GitHub</a></p> <!--TAG <a> para fazer um link que vai me redirecionar para outra pagina que neste caso vai ser meu GITHUB-->
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">canal gratuito no YouTube</a></p><!--SEMPRE usar o parametro TARGET="_BLANK" Para que quando a pessoa clique em meu LINK ela abra uma nova pagina e deixando a minha outra em outra pagina, se eu nao colocar isso e a pessoa clicar no link ele vai sobrepor o meu site e dificilmente a pessoa volte para o meu site dnv-->
+
+    <h2>Usando links internos</h2> <!--Titulo nivel 2-->
+    <p>Esta é a primeira pagina do site, se voce quiser pode acessar tambem a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p> <!--Ele vai fazer a relação de um link de dentro da minha pagina, e utilizei o parametro REL como NEXT para dizer que estou indo para proxima pagina do MEU site-->
+
+    <p>Voce tambem pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">pagina de noticias</a></p> <!--O parametro TARGET="_SELF" significa NA PRORIA ABA, Entao sempre que for para uma PAGINA QUE FAZ PARTE DO MEU SITE utilizar este parametro-->
+
+    <h2>Links para download</h2> <!--Titulo nivel 2-->
+    <ul> <!--Lista NÃO ORDENADA-->
+        <li><a href="livro/bike facil 1200.pdf" download="meulivro.pdf" type="application/pdf" target="_blank" rel="nofollow">Baixar livro em PDF</a> <!--LI lista de itens da minha lista-->
+        <li><a href="livro/bike facil 1200.zip" download="meulivro.zip" type="application/zip" rel="nofollow" target="_blank">Livro compactador em ZIP</a><!--Utilizando o download para poder fazer o download e nele coloco o nome com o final do tipo do documento ja no meu type para esses casos de download de pdf e zip posso usar o APPLICATION/ZIP e o APPLICATION/PDF, ja no meu REL eu coloco como NOFOLLOW pois é algo que estou colocando no meu site que nao faz parte do meu conteudo que criei e no meu target deixei como TARGET="_BLANK" pos quero que ele abra em uma nova janela nao sobrescreva por cima do meu site-->
+    </ul>
+</body>
+</html> 

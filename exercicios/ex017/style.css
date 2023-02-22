@@ -1,0 +1,42 @@
+@charset "UTF-8"; /*Estou dizendo que este texto vai possuir assentos*/
+
+body { /*Estilizando meu body usando o FONT-FAMILY para mudar a fonte do conteudo do meu site*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* MEDIDAS ABSOLUTAS
+       cm, mm, in(polegada), px, pt, pc (Não recomendasse usar pt e pc em telas)
+
+       MEDIDAS RELATIVAS
+       EM(Medida relativa atual de um tamanho da fonte)
+       EX(Relativo a altura X de uma fonte)
+       REN(Relativo a fonte que esta configurada no body)
+       VW(Que quer dizer a largura da VIEW PORT TAMANHO DA TELA) 
+       VH(Altura da VIEW PORT ALTURA DA TELA
+       E % 
+
+
+       1 EM é equivalente a 16PX e se eu colocar por ex: 2 EM ele vai multiplicar 16 que vai para 32px
+    */
+    font-size: 1em;
+}
+
+/*SHOTGAND FONT
+font-style -> font-weigth -> font-size -> font-family
+
+font-family: 'Work Sans', sans-serif;
+font-weigth: bolder;
+font-size: 3em;
+font-style: italic;
+*/
+
+h1 {
+    font: italic bolder 3em 'work Sans', sans-serif; /*Aqui estou dizendo que meu font-style(Estilo de fonte) vai ser italico - Meu font-weigth(Peso do texto) vai ser bolder que vai ficar em negrito - Meu font-size(Tamanho da letra do texto) vai ser 3em - Meu font-style(Estilo da fonte do texto) vai ser Work Sans se ele nao achar essa ele vai por a Sans-serif*/
+}
+
+h2 {
+    font: bold 2em 'Work Sans'; /*Aqui estou dizendo que meu font-weigth( peso do texto) é bolder - Meu font-size(Tamanho do meu texto) é 2em - Meu font-family(Tipo de fonte do texto) é Work Sans*/
+}
+
+/* Usando FONT-FAMILY para transformar a fonte de meus titulos
+h1, h2 { 
+    font-family: 'Times New Roman', Times, serif;
+}*/

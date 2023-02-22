@@ -1,0 +1,25 @@
+@charset "UTF-8"; /*Tudo que comecar com @ é uma REGRA e aqui coloquei esta que funciona como no HTML e estou dizendo que este texto vai possuir assentos*/
+
+body {
+    background-color: rgb(48, 48, 48);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: aliceblue;
+    background-color: aqua;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    text-align: justify;
+    color: aliceblue;
+}
+
+a {
+    color: rgb(0, 255, 13);
+}

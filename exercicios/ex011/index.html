@@ -1,0 +1,46 @@
+<!DOCTYPE html><!--Estou dizendo que meu código vai ser em HTML5-->
+<html lang="pt-br"> <!--Estou dizendo que meu texto vai ser em portugues brasil-->
+<head> <!--Tag de abertura das configurações do meu site-->
+    <meta charset="UTF-8"> <!--Estou dizendo que meu texto vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Tag exclusiva para internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que meu site vai abrir em 100%, sem comer palavras ou fotos-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> <!--Icone que fica na aba superior do meu site-->
+    <title>Midias em HTML5</title> <!--Titulo do meu site-->
+</head>
+<body> <!--Abertura do corpo de todo meu conteudo-->
+    <h1>Imagens Dinamicas</h1> <!--Titulo de nivel 1-->
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p><!--Abertura de paragrafo-->
+
+    <picture> <!--Dizendo que isto aqui vai conter uma foto-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Trabalhando com imagens dinamicas e que esta pagina vai ser redimensionada conforme a tela do usuario, e para isso utilizo a tag SOURCE e os PARAMETROS MEDIA (Dizendo que a partir daquele pixel a foto vai ser esta da tag SOURCE) - SRCSET (Endereço de onde estou pegando esta foto que vai entrar no lugar da outra se a outra foto for muito grande para a tela do usuario) - TYPE(Dizendo o tipo de imagem que estou utilizando )-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--Se a foto padrao for muito grande entao ele vai trazer esta foto de tamanho M-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel"><!--MInha foto padrao de tamanho maior e acima as tags sources que vao redimensionar a imagem conforme tamanho de tela do usuario-->
+        <!--Lembrando que tem a ordem de fotos, por exemplo a padrao IMG por ultimo, se for uma tela menor do usuario fica uma foto menor, caso seja menor ainda fica uma mais menor ainda em cima do meu source e assim sussetivamente-->
+    </picture>
+
+    <h1>Reproduzindo audio</h1> <!--Titulo de nivel 1-->
+
+    <p>Vamos aprender a reproduzir audios em html5</p> <!--Aqui existem duas formas conforme abaixo para reproduzir audio em meu site-->
+
+<!--PRIMEIRA FORMA DE COLOCAR AUDIO-->
+
+    <audio src="media/christmas-Tree.mp3" controls autoplay></audio> <!--Uso a tag <AUDIO> e dentro dela passo parametros e eles sao o SRC que diz onde fica meu arquivo, qual a origem dele, e o controls autoplay a ferramenta que vai fazer tocar meu audio porem tem muito navegador que nao tem compatibilidade com arquivos MP3 para isso tenho que ter outros formatos eles sao WAV, OGG-->
+
+
+
+<!--SEGUNDA FORMA DE COLOCAR AUDIO-->
+
+
+    <audio preload="metadata" autoplay controls loop><!--Sempre verificar tamanho do arquivo antes de colocar o PRELOAD pois ele vem como padrao AUTO e isso quer dizer que ele vai ter que carregar todo meu audio para ai mostrar a pagina em si para o usuario - O parametro autoplay vai poder dar o play em meu audio-->
+
+        <source src="media/guanacast-33.mp3" type="audio/mpeg" ><!--Dentro do meu source colocar os parametros SRC para dizer a origem do meu arquivo e no TYPE para dizer o tipo do arquivo que neste caso é o MP3 so que escrevemos AUDIO/MPEG-->
+
+        <source src="media/guanacast-33.ogg" type="audio/ogg"><!--Dentro do meu source colocar os parametros SRC para dizer a origem do meu arquivo e no TYPE para dizer o tipo do arquivo que neste caso é o OGG so que escrevemos AUDIO/OGG-->
+
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <!--Dentro do meu source colocar os parametros SRC para dizer a origem do meu arquivo e no TYPE para dizer o tipo do arquivo que neste caso é o WAV so que escrevemos AUDIO/WAV-->
+
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="media/christmas-Tree.mp3">Clique aqui para baixar o arquivo MP3</a>.</p> <!---->
+    </audio>
+</body>
+</html>

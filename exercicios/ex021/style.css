@@ -1,0 +1,78 @@
+@charset "UTF-8"; /*Usado para dizr que meu texto vai possuir assentos*/
+
+body { /*Dizendo que meu conteudo do site vai ter fonte ARIAL, fundo PRETO, e margin 0px para tirar meu conteudo das bordas do navegador*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    margin: 0px;
+}
+
+header { /*Dizendo que meu HEADER vai ter fundo branco com borda do PADDING de 10px e margin de 10px para tirar meu conteudo das bordas do navegador*/
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav { /*Dizendo que meu nav vai ter fundo nessa cor ai e uma borda do padding com 3px colocanbdo BOX-SHADOW com sombras*/
+    background-color: #775b00;
+    padding: 3px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.637); /*DESLOCAMENTO HORIZONTAL DIR/ESQ - DESLOCAMENTO VERTICAL CIMA/BAIXO - ESPALHAMENTO DA SOMBRA*/
+}
+
+nav > a { /*Do meu elemento pai para o filho dizendo que vai tirar aquele sublinhado e cor padrao do LINK e deixar na cor da letra branca com fonte em negrito e com margin para a direita de 30px*/
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav a:hover { /*Fazendo animacao com hover que quando passar o mouse em cima do LINK ele vai trazer um UNDERLINE em baixo do texto*/
+    text-decoration: underline;
+}
+
+main { /*Dizendo que vai ter fundo branco com borda do padding em 10px e com margin de 10px para tirar meu conteudo das bordas do navegador e border-radius que vai arredondar as bordas do meu MAIN*/
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#assuntos { /*SECTION dizendo que meu fundo vai ser em cor salmao com fonte em negrito com texto alinhado ao meio da tela com bordas do padding em 10px, com altura de cima pra baixo de 10px, com largura para a direita de 10px, com altura de baixo para cima de 10px com largura para esquerda de 10px*/
+    background-color: salmon;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+article { /*Dizendo que meu fundo vai ser nessa cor ai com bordas do padding de 5px*/
+    background-color: #ffd0d0;
+    padding: 5px;
+}
+
+article > aside { /*Do elemento pai para o filho dizendo que o fundo vai ser nessa cor ai*/
+    background-color: #bdbcbc;
+}
+
+footer { /*Dizendo que o fundo vai ser na cor preta com cor do texto em branco e texto centralizado no meio com borda do padding em 6px e margin 0px e fonte em NEGRITO*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+footer > p { /*Para deixar meu paragrafo com menor margin*/
+    margin: 0px;
+}
+
+div#bola { /*Fazendo formato de uma bola com ALTURA 100px LARGURA 100PX FUNDO COR BRANCA E BORDA EM 50% QUE VAI FAZER FORMATO DE UMA BOLA*/
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: salmon;
+    border-radius: 50%;
+}

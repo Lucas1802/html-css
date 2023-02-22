@@ -1,0 +1,67 @@
+<!DOCTYPE html><!--Dizendo que vai ser em HTML5-->
+<html lang="pt-br"> <!--Dizendo que vai ser em portugues brasil-->
+<head> <!--Abertura da area de configurações do site-->
+    <meta charset="UTF-8"> <!--Dizendo que vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo para internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que vai abrir em 100% meu site-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"><!--Icone que fica na aba do navegador-->
+    <title>Links</title><!--Titulo que fica na aba do navegador-->
+    <style> /*Abertura de estilos CSS interno dentro do meu HTML*/
+
+        /* SELETORES PERSONALIZADOS
+
+            #    = ID
+            .    = CLASS
+            :    = PSEUDO-CLASS
+            ::   = PSEUDO-ELEMENT
+            >    = CLILDREM (FIlho)
+
+        */
+
+        body { /*Deixando todo conteudo do site na fonte ARIAL*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #ff0000; /*Deixando meu link com cor vermelha*/
+            text-decoration: none; /*Tirando o sublinhado das letras*/
+            font-weight: bold; /*Deixando com a fonte em negrito*/
+        }
+
+        a:visited { /*Pseudo-classe que quando eu ja tanha visitado meu link ele vai deixar na cor DARKRED para indentificar que eu ja passei por aquele link uma vez*/
+            color: #8b0000;
+        }
+
+        a:hover { /*Toda vez que passar mouse em cima ele vai ficar com a cor do texto em preto e sublinhada*/
+            color: #000000; /*Deixando na cor preta*/
+            text-decoration: underline; /*Deixando sublinhada*/
+        }
+
+        a:active { /*Toda vez que eu clica no link ele vai ficar azul por conta do ACTIVE*/
+            color: #0000ff;
+        }
+
+        .especial::after { /*Assim como PSEUDOCLASSES os PSEUDOELEMENTOS são quase iguais e eles funcionam da mesma forma so que com :: depois do nome da tag que quero estilizar*/
+            /*Os PSEUDO-ELEMENTOS permite estilizar uma parte especifica do meu elemento selecionado*/
+            content: ' ☚'; /*content é oque quero adicionar a minha palavra a mais e AFTER la em cima significa DEPOIS*/
+        }
+
+        .especial::before {
+            content: '☛ '; /*BEFORE significa ANTES*/
+        }
+
+        .especial {
+            background-color: #ffb1b1; /*Deixando com fundo com cor estilizada*/
+        }
+
+    </style>
+</head>
+<body> <!--Abertura onde ficará meu conteudo do site-->
+    <h1>Personalizando links</h1> <!--Titulo de nivel 1-->
+    <ul><!--Abertura de lista NAO ORDENADA-->
+        <li><a href="https://gustavoguanabara.github.io" rel="nofollow" target="_blank">Repositório GitHub</a>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="nofollow" class="especial">Canal do YouTube</a>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="nofollow" class="especial">Site do CursoemVideo</a> <!--Minha LISTA DE ITENS com a tag A para dizer que é um link e os parametros dentro dela com HREF origem do link o REL que esta NOFOLLOW para dizer que é conteudo de outro site nao é meu e o target _blank que eesta dizendo para nao sobrepor o meu site quando abrir o link-->
+    </ul>
+</body>
+</html>

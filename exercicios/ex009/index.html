@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!--Dizendo que este código vai ser em HTML5-->
+<html lang="pt-br"> <!--Dizendo que este texto vai ser em portugues Brasil-->
+<head>
+    <meta charset="UTF-8"> <!--Dizendo que este código vai ser em HTML 5-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Exclusivo internet explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dizendo que meu site vai abrir com escala em 100%, sem comer palavras nem fotos-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> <!--Trazendo meu icone da pagina la em cima do navegador-->
+    <title>Listas</title>
+</head>
+<body>
+   <h1>Trabalhando com listas</h1> <!--Texto de nivel 1-->
+   <h2>Listas ordenadas</h2> <!--Texto de nivel 2-->
+   <ol type="1"> <!--A tag OL significa uma LISTA ORDENADA então uso ela quando precisar fazer por exemplo uma receita de bolo (Lista). No meu type posso por os seguintes tipos 1 - A - a - I - i isso vai vai mudar no começo da minha lista por exemplo vai aparecer la assim 1. ACORDAR 2. TOMAR CAFE.....-->
+        <li>Acordar
+        <li>Ligar para a Dioeny
+        <li>Tomar cafe
+        <li>Escovar os dentes
+        <li>Ir para faculdade <!--LI significa LISTA DOS ITENS, primeiro coloco minha tag OL de lista ordenada e dentro dela coloco minha LI que vai ser meus itens da lista E a tag LI nao precisa ser fechada-->
+        <li>Almoçar
+        <li>Ir para o trabalho
+        <li>Voltar para casa
+        <li>Jantar
+        <li>Dormir
+   </ol>
+
+   <h2>Listas não ordenadas</h2> <!--Texto de nivel 2-->
+   <ul type="circle"> <!--Como proprio nome ja diz ela é uma LISTA NÃO ORDENADA então uso ela quando precisar fazer por exemplo uma receita de bolo (Lista). No meu TYPE tenho as seguintes tipos DISC - CIRCLE - SQUARE isso vai vai mudar no começo da minha lista por exemplo vai aparecer la assim 1. ACORDAR 2. TOMAR CAFE.....-->
+        <li>Pao
+        <li>Leite
+        <li>Tomate
+        <li>Manteiga
+        <li>Arroz
+        <li>Feijao
+   </ul>
+
+   <h2>Minhas linguagens favoritas</h2> <!--Texto de nivel 2-->
+   <ol> <!--Posso por duas listas em uma so, abro a tag OL e dentro dela abro duas LI e dentro das minhas LI eu posso colocar mais uma OL em cada e assim fazer duas listas que se conversam dentro de apenas uma OL-->
+        <li>Antigas <!--TAG LI siginifica LISTA DE ITENS-->
+        <ol type="I"> <!--TAG OL significa LISTA ORDENADA-->
+            <li>PHP
+            <li>C#
+            <li>JAVA
+        </ol>
+        </li>
+        <li>Novas
+            <ol type="I" start="4"> <!--Caso eu queira que ele continue na ordem da lista de linguagens ANTIGAS eu coloco o parametro START="4" que ele vai trazer na ordem e por mais que a seja uma letra do alfabeto eu tenho que colocar o numero dela, por exemplo colocar a letra E vai ser o numero 5 pq cada letra vai com seu numero-->
+                <li>.NET
+                <li>Angular
+                <li>React
+            </ol>
+        </li>
+   </ol>
+
+   <h2>Meus jogos favoritos</h2> <!--Texto de nivel 2-->
+
+   <ul> <!--Lista NÃO ORDENADA principal e dentro desta minha lista eu tenho mais 2 listas nao ordenadas-->
+
+        <li>PLAY 1</li> <!--LI da minha 1 UL principal-->
+        <ul type="square"> <!--Iniciando minha 2 UL-->
+            <li>Medal of honor <!--LI da minha 2 UL-->
+                <ul type="disc"> <!--Iniciando minha 3 UL-->
+                    <li>Medal of Honor company <!--LI da minha 2 UL-->
+                </ul>
+            <li>Gta I
+                <ul type="disc">
+                    <li>Gta II
+                </ul>
+        </ul>
+        <li>PS3</li>
+        <ul type="square">
+            <li>Gta V
+            <li>Ride
+        </ul>
+        <li>XBOX</li>
+        <ul type="square">
+            <li>Fifa
+            <li>Gta V
+        </ul>
+        <li>PC</li>
+        <ul type="square">
+            <li>Warzone
+            <li>Euro truck simulator 2
+        </ul>
+
+   </ul>
+
+   <h2>Lista de definições</h2> <!--Texto de nivel 2-->
+   <dl> <!--Significa definição de lista e dentro dela vai a TAG DT E DD-->
+        <dt>HTML</dt> <!--TERMO-->
+        <dd>Linguagem de marcação para criação de conteudo para um site</dd> <!--DESCRIÇÃO-->
+
+        <dt>CSS</dt> <!--A TAG DT diz do que estou falando como se fosse um titulo-->
+        <dd>Linguagem de marcação para a criação de um site</dd> <!--E a minha TAG DD diz sobre o meu titulo e da um breve resumo-->
+
+        <dt>JavaScrit</dt>
+        <dd>Linguagem de programaçao para a criação de interatividade de um site</dd>
+   </dl>
+</body>
+</html>

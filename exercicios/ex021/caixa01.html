@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /*BOX DO ELEMENTO BOX-LEVEL*/
+            background-color: lightgray; /*Colocando fundo na cor LIGTHGRAY*/
+            height: 40px; /*Altura do H1*/
+            width: 400px; /*Largura do H1*/
+
+
+
+            /*******************SIMPLIFICANDO AS BORDAS*************************/
+
+            /*border-width: 10px; /*expessura da borda/
+            border-style: solid; /*Modelo de borda que estou usando/
+            border-color: #555555; /*Cor da borda*/
+
+
+            border: 10px solid #555555; /*BORDA SIMPLICADA*/
+
+
+            /**********************************************/
+
+
+            /**************SIMPLIFICANDO OS PADDING*************/
+
+            /*padding-top: 10px; /*Mudar a altura de cima para baixo do padding/
+            padding-right: 10px; /*Mudar a largura a direita do padding/
+            padding-bottom: 10px; /*Mudar a altura de baixo pra cima do paddign/
+            padding-left: 10px; /*Mudar a largura a esquerda do padding*/
+
+
+            padding: 10px; /*BORDA PADDING*/
+            /*SE TODAS MEDIDAS FOREM IGUAIS SIGNIFICA QUE ESTOU PONDO 10PX PARA CIMA PARA DIREITA PARA BAIXO E PARA ESQUERDA*/
+
+            /**************************************************/
+
+
+            /******************SIMPLIFICANDO AS MARGIN**************/
+
+            /*margin-top: 10px; /*Mudar a altura de cima pra baixo/
+            margin-right: 10px; /*Mudar a largura para a direita /
+            margin-bottom: 10px; /*Mudar a altura de baixo para cima/
+            margin-left: 10px; /*Mudar a largura para a esquerda*/
+
+
+
+            margin: 10px 10px 10px 10px; /*MARGIN SIMPLIFICADO*/
+
+            /**************************************************/
+
+
+
+            /******************SIMPLIFICANDO AS OUTLINE****************/
+
+            /*margin: auto; /*Usado para centralizar o meu H1/
+
+            outline-width: 5px; /*Tamanho da borda da outline/
+            outline-style: dashed; /*Modelo da borda da outline/
+            outline-color: salmon; /*Cor da borda da outline*/
+
+
+            outline: 5px dashed salmon; /*OUTLINE SIMPLIFICADO*/
+
+            /**************************************************/
+
+        }
+
+        a { /*BOX DO ELEMENTO BOX-INLINE*/
+            border-width: 10px; /*Tamanho da borda*/
+            border-style: solid; /*Tipo de borda que estou usando*/
+            border-color: red; /*Cor da borda que estou usando*/
+        }
+
+        /*PARA USAR SHOTLAND SEMPRE USAR NA SEQUENCIA = CIMA -> DIREITA -> BAIXO -> ESQUERDA*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level mas os <a href="">links são exemplos de box-inline.</a> Vamos ver como tudo isso funciona.</p>
+    <p>Caso queira deixar uma tag que no caso H1 que é uma LEVEL mudar para INLINE so colocar DISPLAY: INLINE para mudar uma tag A que é INLINE para LEVEL so colocar DISPLAY: BLOCK</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!--Dizendo que este documento vai ser em HTML5-->
+<html lang="pt-br"><!--Dizendo que esta pagina vai ser em portugues brasil-->
+<head>
+    <meta charset="UTF-8"> <!--Dizendo que meus textos vao possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo internet Explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Dizendo que minha pagina vai abrir em 100% sem comer palavras ou fotos-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> <!--Trazendo o icone que fica na minha pagina la em cima no navegador-->
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1> <!--Texto nivel 1-->
+
+    <h2>Código fonte - Pré-formatado</h2> <!--Texto nivel 2-->
+
+    <p>O comando <code>document.getElementyId('teste')</code> é escrito em linguagem JavaScript.</p> <!--TAG CODE para trazer tudo em tamanho unico e deixar a fonte para códigos de programação-->
+
+    <pre> <!--TAG PRE para trazer os meus códigos identados de forma correta-->
+        <code> <!--TAG CODE para que todos meus caracteres fiquem em tamanhos unicos e com formatação como códigos de programação-->
+            num = int(input('Digite um numero'))
+            if nun % 2 == 0
+                print(f''O numero {num} é PAR')
+            else:
+                print(f'O numero {num} é IMPAR')
+            print('Fim do programa')
+        </code> <!--Se eu selecionar o código que desejo e aperta TAB ele vai para frente, se eu aperta SHIFT + TAB ele traz meu codigo todo para tras-->
+    </pre>
+
+    <h2>Citações SIMPLES</h2> <!--Citação siginifica: ILUSTRAR UM RACIOCINIO-->
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p> <!--Quando for uma citação utilizar a TAG <Q>-->
+
+    <h2>Citações COMPLETAS</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos: </p>
+    <blockquote cite="https://leitura.com.br/html-xhtml-e-css-para-leigos-L027-9788576086970">
+        A diferenca entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capitulo descrevem os blocos de texto.
+    </blockquote> <!--O BLOCKQUOTE vai deixar a minha frase com uma margem para o lado como se eu abrisse paragrafo, e vou estar citando o texto e dentro da minha tag BLOCKQUOTE eu uso o parametro CITE que serve para colocar de onde peguei aquela informação, por exemplo estou citando um trecho do livro de JEFF NOBLE e no parametro deixei o link de onde peguei esta informação-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheet">CSS</abbr>. Estou adorando</p> <!--Como o titulo nivel 2 ja me disse (ABREVIAÇÕES) Ele vai abreviar meus textos por exemplo HYPER TEXT MARKUP LANGUAGE abreviado fica HTML e assim que eu passar o mouse em cima do texto escrito HTML ele vai aparecer em uma caixinha em baixo o nome completo do HTML, tudo isso graças a tag ABBR-->
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML e CSS.</bdo></p> <!--Ele vai deixar meu texto todo ao contrario de traz para frente (Invertido) dir="ltr" e dir="rtl"-->
+
+</body>
+</html>
