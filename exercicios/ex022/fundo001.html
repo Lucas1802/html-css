@@ -1,0 +1,41 @@
+<!DOCTYPE html><!--Dizendo que este é um documento HTML5-->
+<html lang="pr-br"> <!--Dizendo que este texto vai ser em portugues brasil-->
+<head> <!--Abertura de configuracoes do site-->
+    <meta charset="UTF-8"> <!--Tag usada para dizer que meu texto vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Exclusivo explorer-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dizendo que vai abrir em escala 100%-->
+    <title>Teste de imagem de fundo</title> <!--Titulo do site-->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('imagens/wallpaper001.jpg');
+        }
+        div.quadrado {
+            display: inline-block; /*Dizendo que quero as divs uma do lado da outra em linha e com o display delas bloqueado*/
+            border: 1px solid black; /*Cor da minha borda em preto solido com largura de cor de 1px*/
+            border-radius: 10px; /*Dizendo que vai ser 10px em cada borda da div*/
+            background-color: lightgray; /*Dizendo que o fundo vai ser na cor LIGTHGRAY*/
+            width: 300px; /*Dizendo que o largura vai ser de 300px*/
+            height: 300px; /*Dizendo que a altura vai ser de 300px*/
+        }
+        /*Aqui tenho 3 tipos de como colocar o fundo*/
+        div#q1 {
+            background-color: skyblue; /*Aqui com o normal background-color*/
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red); /*Aqui com o background-image porem com uma funcao linear-gradient*/
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png'); /*Aqui a mesma coisa que o de cima porem com uma funcao diferente que é o URL*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div> <!--Minha DIV com classe QUADRADO E ID Q1-->
+    <div class="quadrado" id="q2"></div> <!--Minha DIV com classe QUADRADO E ID Q2-->
+    <div class="quadrado" id="q3"></div> <!--Minha DIV com classe QUADRADO E ID Q3-->
+</body>
+</html>
