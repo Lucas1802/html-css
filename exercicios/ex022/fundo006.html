@@ -1,12 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!--Dizendo que meu html é ultima versao    -->
+<html lang="pt-br"> <!--Dizendo que vai ser em portugues brasil-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamanho de imagem de fundo do site</title>
+    <meta charset="UTF-8"> <!--Dizendo que vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Tag exclusivo edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dizendo que vai abrir em escala 100%-->
+    <title>Tamanho de imagem de fundo do site</title> <!--Titulo que fica na aba do site-->
+    <style>
+        body {
+            height: 100vh; /*100 da minha VIEWPORT*/
+            background-color: black; /*FUNDO NA COR PRETA*/
+            background-image: url('imagens/wallpaper002.jpg'); /*TRAZENDO A MINHA IMAGEM EM URL*/
+            background-position: center top; /*CENTRALIZANDO A IMAGEM NO CENTRO E TOPO*/
+            background-repeat: no-repeat; /*DIZENDO PARA NAO REPETIR MINHA IMAGEM*/
+            background-size: cover; /*MINHA FOTO VAI TER CORTES MAIS ELA SE ADPTA USANDO cover, POSSO USAR TBM FIXA QUE É COM % E PX, POSSO USAR COM CONTAIN QUE VAI TENTAR ADPTAR A IMAGEM NA TELA, POSSO DEIXAR AUTOMATICO TBM PARA O NAVEGADOR SE VIRAR PARA MOSTRAR A FOTO*/
+        }
+
+        main {
+            background-color: white; /*FUNDO BRANCO NA MINHA MAIN*/
+            width: 400px; /*MAIN NO TAMANHO DE 400PX*/
+            padding: 10px; /*PADDING PARA DEIXAR AS LETRAS DESGRUDADAS DOS CANTOS*/
+            margin: auto; /*DEIXANDO A MARGIN AUTOMATICA*/
+            border-radius: 15px; /*DEIXANDO COM BORDA DE 15 PIXELS*/
+            border: 1px solid black; /*DEIXANDO COM BORDA DE 1 PIXEL SOLIDA NA COR PRETA*/
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, sunt natus ex minus reiciendis voluptates necessitatibus ullam illum, fugit aut expedita impedit error sapiente quos fugiat dignissimos quisquam similique at!
+        Voluptate, repellat! Quia, laborum eos, deleniti expedita ut sequi soluta repudiandae aperiam nam impedit voluptates a nisi recusandae. Voluptatem autem architecto mollitia laudantium aliquid eum alias sequi fugit magni facilis?
+        Facere provident repudiandae necessitatibus accusantium quo ex doloribus esse quae possimus autem, et ab quibusdam corporis vel error ullam iste deserunt dolore voluptates dolor aut recusandae assumenda illo? Accusamus, laudantium!</p>
+    </main>
 </body>
 </html>
