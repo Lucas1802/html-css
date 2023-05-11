@@ -9,9 +9,8 @@
     <style>
         body {
             background-color: #f77a8f;
-        }
-        div {
             text-align: center;
+            padding-top: 50px;
         }
 
         h1.titulo {
@@ -27,38 +26,45 @@
             font-size: 8em;
             color: white;
             margin: 50px;
+            cursor: pointer;
 
         }
 
-        #animacao1:hover {
+        button:hover {
             background-color: black;
             color: white;
             border-radius: 8px;
             margin: 10px;
         }
 
-        #animacao2:hover {
+        #sim:hover {
             background-color: black;
             color: white;
             border-radius: 8px;
             margin: 10px;
-            transition: ;
         }
-        
     </style>
-    <script>
-        var title = document.querySelector('#animacao2');
-
-        title.addEventListener("mouseover", function(){
-            this.style.backgroundColor = "yellow";
-        });
-    </script>
 </head>
 <body>
-    <div>
-        <h1 class="titulo">Cuzinho hoje? &#x1F60F; </h1>
-        <a href="https://www.youtube.com/shorts/HMqQAbWSgaE" rel="target_blank"><button id="animacao1">SIM</button></a>
-        <button id="animacao2">NÃO</button>
-    </div>
+    <h1 class="titulo">Cuzinho hoje? &#x1F60F; </h1>
+        <!--<a href="https://www.youtube.com/shorts/HMqQAbWSgaE" rel="target_blank"></a>-->
+        <button id="sim">SIM</button>
+        <button id="nao">NÃO</button>
+
+    <script>
+        var nao = document.getElementById("nao");
+        nao.addEventListener("click", function(){
+            var randomX = math.floor(math.random() * window.innerWidth);
+            var randomY = math.floor(math.random() * window.innerHeight);
+            nao.style.position = "absolute";
+            nao.style.top = randomY + "px";
+            nao.style.left = randomX + "px";
+        });
+
+        var sim = document.getElementById("sim");
+        sim.addEventListener("click", function(){
+            window.location.href = "https://www.youtube.com/shorts/HMqQAbWSgaE";
+        });
+    </script>
 </body>
 </html>
