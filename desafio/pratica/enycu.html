@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me da o cuzinho amor? </title>
+    <link rel="shortcut icon" href="imagens/cu.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f77a8f;
+        }
+        div {
+            text-align: center;
+        }
+
+        h1.titulo {
+            font-size: 12em;
+            font-weight: bold;
+            color: black;
+
+        }
+        button {
+            background-color: #f77a8f;;
+            border: none;
+            font-weight: bold;
+            font-size: 8em;
+            color: white;
+            margin: 50px;
+
+        }
+
+        #animacao1:hover {
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        #animacao2:hover {
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            margin: 10px;
+            transition: ;
+        }
+        
+    </style>
+    <script>
+        var title = document.querySelector('#animacao2');
+
+        title.addEventListener("mouseover", function(){
+            this.style.backgroundColor = "yellow";
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1 class="titulo">Cuzinho hoje? &#x1F60F; </h1>
+        <a href="https://www.youtube.com/shorts/HMqQAbWSgaE" rel="target_blank"><button id="animacao1">SIM</button></a>
+        <button id="animacao2">NÃO</button>
+    </div>
+</body>
+</html>

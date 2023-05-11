@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--Dizendo que vai ser ultima versao do html-->
+<html lang="pt-br"> <!--Dizendo que vai ser em portugues brasil-->
+<head>
+    <meta charset="UTF-8"> <!--Dizendo que vai possuir assentos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Exclusivo edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Vai abrir em escala 100%-->
+    <title>Centralização vertical de caixas</title> <!--Titulo do meu site-->
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');/*Trazendo minha imagem com URL*/
+            background-size: 100% 100%; /*Dizendo que minha tag section vai ter tamanho de 100 de altura e 100 de largura*/
+            position: relative; /*Dizendo que vou deixar numa posicao relativa, nao muda nada mais e para eu conseguir mudar conteudos de uma tag estando dentro da outra caso a outra esteja usando a declaração position absolute*/
+            height: 500px; /*Dizendo que minha tag vai ter altura de 500px*/
+            padding: 10px; /*Deixando padding para separar os cantos das tags para divilas*/
+            background-color: purple; /*Deixando na cor roxa o fundo*/
+        }
+ 
+        #conteudo {
+            background-image: url('imagens/target001.png'); /*Trazendo minha imagem com url*/
+            background-size: 100% 100%; /*Dizendo que minha tag section vai ter tamanho de 100 de altura e 100 de largura*/
+            position: absolute;
+            height: 200px; /*Dizendo que minha tag vai ter altura de 200px*/
+            width: 400px; /*Dizendo que minha tag vai ter tamanho de 400px*/
+            background-color: yellow; /*Deixando na cor amarelo o fundo*/
+
+            transform: translate(-50%,-50%); /*Utilizando a declaracao transforme: translate para deixar minha tag centralizada ao meio da minha outra tag*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container"> 
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

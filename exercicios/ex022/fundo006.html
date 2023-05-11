@@ -13,15 +13,27 @@
             background-position: center top; /*CENTRALIZANDO A IMAGEM NO CENTRO E TOPO*/
             background-repeat: no-repeat; /*DIZENDO PARA NAO REPETIR MINHA IMAGEM*/
             background-size: cover; /*MINHA FOTO VAI TER CORTES MAIS ELA SE ADPTA USANDO cover, POSSO USAR TBM FIXA QUE É COM % E PX, POSSO USAR COM CONTAIN QUE VAI TENTAR ADPTAR A IMAGEM NA TELA, POSSO DEIXAR AUTOMATICO TBM PARA O NAVEGADOR SE VIRAR PARA MOSTRAR A FOTO*/
+            background-attachment: cover; /*Dizendo que o fundo vai rolar junto com o conteudo*/
         }
 
         main {
             background-color: white; /*FUNDO BRANCO NA MINHA MAIN*/
-            width: 400px; /*MAIN NO TAMANHO DE 400PX*/
+            max-width: 700px; /*MAIN NO TAMANHO DE 400PX*/
             padding: 10px; /*PADDING PARA DEIXAR AS LETRAS DESGRUDADAS DOS CANTOS*/
             margin: auto; /*DEIXANDO A MARGIN AUTOMATICA*/
             border-radius: 15px; /*DEIXANDO COM BORDA DE 15 PIXELS*/
             border: 1px solid black; /*DEIXANDO COM BORDA DE 1 PIXEL SOLIDA NA COR PRETA*/
+
+            /*SHORTHAND - BACKGROUND 
+            
+                Color -> image -> position -> repeat -> {size} -> attachement
+
+                PARA PODER USAR SHORTHAND TENHO QUE APLICAR EXATAMENTE NESTA ORDEM PARA QUE FIQUE CERTO E NAO PRECISE FICAR PONDO VARIAS DECLARACOES EM VARIAS LINHAS
+
+                DE MOMENTO AINDA NAO FUNCIONA O SIZE DENTRO DO SHORTHAND 
+            */
+
+            /*background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed; MEU SHORTHAND EM ACAO*/
         }
     </style>
 </head>
@@ -30,7 +42,22 @@
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, sunt natus ex minus reiciendis voluptates necessitatibus ullam illum, fugit aut expedita impedit error sapiente quos fugiat dignissimos quisquam similique at!
         Voluptate, repellat! Quia, laborum eos, deleniti expedita ut sequi soluta repudiandae aperiam nam impedit voluptates a nisi recusandae. Voluptatem autem architecto mollitia laudantium aliquid eum alias sequi fugit magni facilis?
-        Facere provident repudiandae necessitatibus accusantium quo ex doloribus esse quae possimus autem, et ab quibusdam corporis vel error ullam iste deserunt dolore voluptates dolor aut recusandae assumenda illo? Accusamus, laudantium!</p>
+        Facere provident repudiandae necessitatibus accusantium quo ex doloribus esse quae possimus autem, et ab quibusdam corporis vel error ullam iste deserunt dolore voluptates dolor aut recusandae assumenda illo? Accusamus, laudantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo dolorum error ad, et maiores impedit nemo eum sint dicta est dolore optio, minus aliquid molestias atque eveniet ipsum? Asperiores, natus?
+        Voluptates fuga temporibus quod minus odit, explicabo qui autem, doloremque harum recusandae sint rerum laudantium! Blanditiis doloribus, ratione maiores dolore nulla magni veniam adipisci, dolorem pariatur labore voluptate maxime quia!
+        Eaque aut dolorem corrupti? Nihil in cum ab tempore, ad ut laudantium esse, cupiditate id rerum doloribus amet perspiciatis architecto placeat? Culpa, doloremque eius iusto molestias sapiente deleniti. Qui, architecto?
+        Rerum quidem, est odio animi, laboriosam iusto corporis consequuntur esse praesentium ipsa deleniti expedita nulla illo placeat eaque nesciunt incidunt suscipit accusamus pariatur! Eius ad consequuntur provident vitae officiis necessitatibus?
+        Impedit quia cumque, praesentium veritatis corrupti repellat, exercitationem adipisci cum aut commodi mollitia illo sint, tenetur dignissimos voluptas? Quis veniam dignissimos illo vitae a fugiat accusantium ullam quaerat iusto eveniet.
+        Aperiam neque modi quaerat recusandae repellat ex distinctio quia, hic voluptatum, impedit quidem quos. Quam rerum natus consequuntur eum provident voluptatum quisquam voluptas, maxime ab, aliquam, repellendus hic pariatur nisi.
+        Deserunt reprehenderit veritatis accusamus molestias doloremque aspernatur ex! Doloremque eius neque sunt nobis sed. Non quidem eius quos debitis aperiam consequatur qui ad, excepturi doloremque officia doloribus sequi ducimus repellat!
+        Blanditiis sed inventore doloribus voluptas optio reprehenderit itaque incidunt ullam eum nostrum excepturi nulla perspiciatis quisquam, repellat iste laboriosam debitis enim non porro voluptatum quos explicabo dignissimos temporibus. Sunt, delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptates adipisci veritatis eum maxime, fugiat dolorum ut eaque. Dolores at, accusamus similique vero natus aspernatur. Impedit beatae placeat amet necessitatibus.
+        Voluptas natus cum nam doloremque laudantium deleniti quae eum blanditiis quos, temporibus assumenda, impedit inventore ut voluptatem quaerat eius tenetur voluptatum voluptatibus ullam ea minus aliquid quia! Corporis, voluptatibus rem!
+        Qui esse ratione sed numquam possimus autem, reiciendis enim illum modi explicabo? Dolores, sequi culpa excepturi reiciendis, commodi veritatis possimus incidunt expedita, aliquam voluptates rerum accusamus ipsa doloribus vel! Debitis?
+        Illo reiciendis explicabo et molestias! Omnis, non. Excepturi id unde architecto deleniti, maiores nulla laudantium. Beatae fugit reiciendis in sit deleniti dolore vitae fugiat distinctio aut voluptatibus. Dolor, voluptates molestias!
+        Accusamus possimus facilis praesentium perspiciatis assumenda nobis soluta molestiae repudiandae porro. Reiciendis adipisci sapiente voluptates distinctio quas. Minus, soluta quae, debitis eligendi accusamus repellat adipisci impedit dolorum dolores qui tempora!
+        Commodi iusto itaque temporibus laborum aut tempora adipisci, ad nesciunt doloribus laboriosam nam reprehenderit, beatae, dolore vitae tempore. Error nulla veniam ipsa iure fuga dicta quia! Eveniet laborum ut voluptatum!
+        Sunt, nostrum veniam asperiores quo ratione molestias ducimus facere inventore, nihil facilis quod voluptatem officia vero quisquam cupiditate rerum qui aperiam, modi aliquid quibusdam aut. Quos ipsum debitis officiis perferendis.
+        Amet dolorum consequatur odit nobis harum delectus nisi molestias neque voluptatibus architecto hic labore nulla, sit et fugit quae. Sit repudiandae doloribus, placeat incidunt aliquid quisquam sint neque asperiores accusamus? LOREM*5
+        </p>
     </main>
 </body>
 </html>
