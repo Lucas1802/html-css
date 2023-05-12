@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por favooor </title>
+    <link rel="shortcut icon" href="imagens/cu.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f77a8f;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1.titulo {
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        img {
+            width: 130px;
+            height: 130px;
+            margin-bottom: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Cuzinho hoje? &#x1F60F; </h1>
+        <!--<a href="https://www.youtube.com/shorts/HMqQAbWSgaE" rel="target_blank"></a>-->
+        <button id="sim">SIM</button>
+        <button id="nao">NÃO</button>
+
+        <section>
+            <img src="https://4.bp.blogspot.com/-HQWr8Cs5hFA/WhM9rtNdeoI/AAAAAAAAFwY/RDYJAlMzZcEu72QS_Fm5B82-qi208BMTACLcBGAs/s1600/fwdqtm.jpg" alt="porvadordaocu">
+        </section>
+
+        <script>
+            var nao = document.getElementById("nao");
+            nao.addEventListener("click", function() {
+                var randomX = Math.floor(Math.random() * window.innerWidth);
+                var randomY = Math.floor(Math.random() * window.innerHeight);
+                nao.style.position = "absolute";
+                nao.style.top = randomY + "px";
+                nao.style.left = randomX + "px";
+            });
+    
+            var sim = document.getElementById("sim");
+            sim.addEventListener("click", function() {
+                window.location.href = "https://www.youtube.com/shorts/-sAjEHsnvs4";
+            });
+        </script>
+</body>
+</html>
